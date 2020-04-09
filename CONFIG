@@ -1,4 +1,5 @@
 {
     "package": "rango",
-    "version": "1_0_0"
+    "version": "1_0_0",
+    "context": "python"
 }
