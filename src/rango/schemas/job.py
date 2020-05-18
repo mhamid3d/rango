@@ -15,6 +15,7 @@ class Job(mongoengine.Document):
     _id = mongoengine.UUIDField(required=True, primary_key=True)
     uuid = mongoengine.StringField(required=True)
     label = mongoengine.StringField(required=True)
+    fullname = mongoengine.StringField(required=True)
     created = mongoengine.DateTimeField(required=True)
     modified = mongoengine.DateTimeField(required=True)
     job = mongoengine.StringField(required=True)
