@@ -9,6 +9,7 @@ tj.label = 'GARB'
 tj.created = datetime.datetime.today()
 tj.modified = tj.created
 tj.job = 'GARB'
+tj.fullname = 'Garbage Truck'
 tj.state = True
 tj.path = '/jobs/GARB'
 tj.generate_id()
@@ -19,7 +20,7 @@ and environment,
 and a human character.
 """
 tj.tags = ['truck', 'environment', 'sci-fi']
-# tj.save()
+tj.save()
 
 ts = stem.Stem()
 ts.label = 'aa_seq'
@@ -31,9 +32,6 @@ ts.path = '/jobs/GARB/aa_seq'
 ts.type = 'sequence'
 ts.production = True
 ts.generate_id()
-# ts.save()
-
-obj = job.Job.objects()[0]
-print(obj.sequences())
+ts.save()
 
 me.disconnect()

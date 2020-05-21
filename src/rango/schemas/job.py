@@ -27,6 +27,9 @@ class Job(mongoengine.Document):
     description = mongoengine.StringField()
     tags = mongoengine.ListField()
 
+    def __str__(self):
+        return "Job Object: {}".format(self.label)
+
     def generate_id(self):
         """
         Generates a random uuid and sets it to the _id and uuid fields.
