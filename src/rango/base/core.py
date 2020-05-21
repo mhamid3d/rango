@@ -6,8 +6,8 @@ import os
 
 class RangoHandler(object):
     _DATABASE = 'jinx'
-    _PORT = os.getenv('MONGO_PORT')
-    _THIS_EXT_IP = str(get("https://api.ipify.org").text)
+    _PORT = int(os.getenv('MONGO_PORT'))
+    _THIS_EXT_IP = get("https://api.ipify.org").text
     _MONGO_EXT_IP = os.getenv('MONGO_EXT_IP')
     _MONGO_INT_IP = os.getenv('MONGO_INT_IP')
 
