@@ -11,3 +11,7 @@ try:
         __version__ = version_file.read().strip()
 except IOError:
     LOGGER.warning("Could not find 'VERSION' file in package directory. The __version__ attribute will be empty!")
+
+
+def getHandler():
+    return RangoHandler()
